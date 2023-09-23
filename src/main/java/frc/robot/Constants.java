@@ -89,9 +89,9 @@ public final class Constants {
                   
             public static int driveMotorID = 1;
             public static int turningMotorID = 2;
-            public static boolean driveMotorInverted = false;
+            public static boolean driveMotorInverted = true;
             public static boolean turningMotorInverted = false;
-            public static double absoluteEncoderOffsetRad = (2 * Math.PI) - 4.07698;
+            public static double absoluteEncoderOffsetRad = 0.07;
             public static boolean absoluteEncoderReversed = true;
                        
             public static final SwerveModuleConstants constantes = 
@@ -104,9 +104,9 @@ public final class Constants {
                   
             public static int driveMotorID = 3;
             public static int turningMotorID = 4;
-            public static boolean driveMotorInverted = false;
+            public static boolean driveMotorInverted = true;
             public static boolean turningMotorInverted = false;
-            public static double absoluteEncoderOffsetRad = (2 * Math.PI) - 0.34;
+            public static double absoluteEncoderOffsetRad = 2.95;
             public static boolean absoluteEncoderReversed = true;
                       
                   
@@ -121,10 +121,10 @@ public final class Constants {
                   
             public static int driveMotorID = 5;
             public static int turningMotorID = 6;
-            public static boolean driveMotorInverted = false;
+            public static boolean driveMotorInverted = true;
             public static boolean turningMotorInverted = false;
             public static int absoluteEncoderID = 3;
-            public static double absoluteEncoderOffsetRad = (2 * Math.PI) - 1.2432;
+            public static double absoluteEncoderOffsetRad = 3.22;
             public static boolean absoluteEncoderReversed = true;
                   
             public static final SwerveModuleConstants constantes = 
@@ -138,10 +138,10 @@ public final class Constants {
                   
             public static int driveMotorID = 7;
             public static int turningMotorID = 8;
-            public static boolean driveMotorInverted = false;
+            public static boolean driveMotorInverted = true;
             public static boolean turningMotorInverted = false;
             public static int absoluteEncoderID =  4;
-            public static double absoluteEncoderOffsetRad = (2 * Math.PI) - 5.6684;
+            public static double absoluteEncoderOffsetRad = 3.16;
             public static boolean absoluteEncoderReversed = true; 
                   
             public static final SwerveModuleConstants constantes = 

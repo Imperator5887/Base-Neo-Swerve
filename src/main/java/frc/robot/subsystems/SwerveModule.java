@@ -67,14 +67,12 @@ public class SwerveModule {
         * driving if the motors are on brake mode
         */
         driveMotor.setIdleMode(IdleMode.kBrake);
-        turnMotor.setIdleMode(IdleMode.kBrake);
+        turnMotor.setIdleMode(IdleMode.kCoast);
 
-        driveMotor.setSmartCurrentLimit(40);
-        turnMotor.setSmartCurrentLimit(40);
+        driveMotor.setSmartCurrentLimit(35);
+        turnMotor.setSmartCurrentLimit(35);
 
-        driveMotor.burnFlash();
-        turnMotor.burnFlash();
-
+       
 
 
 
@@ -91,10 +89,11 @@ public class SwerveModule {
         absoluteEncoder.setZeroOffset(constants.absoluteEncoderOffsetRad);
 
        /**
-        * Set the periodic frame rate to 20 ms 
+        * Set the periodic frame rate to 15 ms 
         * for a more constant reading of the turning positon of the module
         */
-        turnMotor.setPeriodicFramePeriod(PeriodicFrame.kStatus5, 15);
+        //turnMotor.setPeriodicFramePeriod(PeriodicFrame.kStatus5, 15);
+        driveMotor.setPeriodicFramePeriod(PeriodicFrame.kStatus5, 15);
 
        /**Set the position and velociity conversion factors  
         * Meters, Meters per Seconds, Radians and Radians per second
@@ -117,9 +116,11 @@ public class SwerveModule {
         * We reset the position of the encoders when we start the robot 
         * through a void function
         */
-        //resetEncoders();
-        driveEncoder.setPosition(0);
-        turnEncoder.setPosition(0);
+        resetEncoders();
+       
+
+       
+
 
     }
 
@@ -153,6 +154,22 @@ public class SwerveModule {
     */
     public double getGiroVelocidad() {
         return turnEncoder.getVelocity();
+    }
+
+    /** A public function to set the conversion factor for the absolute encoder
+     * 
+     * @param factor
+     */
+    public void setAbsPositionConversionFactor(double factor){
+
+        absoluteEncoder.setPositionConversionFactor(factor);
+    }
+    /** A public function to get the position conversion factor of the absolute encoder
+     * 
+     * @return Absolute Encoder position conversion factor
+     */
+    public double getPositionConversionFactorAbsoluteEncoder(){
+        return absoluteEncoder.getPositionConversionFactor();
     }
 
    /**
