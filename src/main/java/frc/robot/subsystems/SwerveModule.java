@@ -114,11 +114,9 @@ public class SwerveModule {
 
        /**
         * We reset the position of the encoders when we start the robot 
-        * through a void function
+        * through a function
         */
         resetEncoders();
-       
-
        
 
 
