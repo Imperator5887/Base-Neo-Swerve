@@ -1,3 +1,9 @@
+/**
+ * Writen by Armando Mac Beath
+ * 
+ * {@MÆTH}
+ */
+
 package frc.robot;
 
 import edu.wpi.first.math.geometry.Translation2d;

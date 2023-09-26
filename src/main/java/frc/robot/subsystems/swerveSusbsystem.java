@@ -1,3 +1,9 @@
+/**
+ * Writen by Armando Mac Beath
+ * 
+ * {@MÆTH}
+ */
+
 package frc.robot.subsystems;
 
 import com.kauailabs.navx.frc.AHRS;

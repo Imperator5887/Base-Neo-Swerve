@@ -1,3 +1,9 @@
+/**
+ * Writen by Armando Mac Beath
+ * 
+ * {@MÆTH}
+ */
+
 package frc.utils;
 
 import edu.wpi.first.wpilibj2.command.Command;
